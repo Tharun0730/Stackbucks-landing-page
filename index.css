@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: default;
+
+}
+
+main{
+    height: 100vh;
+    width:100%;
+}
+main nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+padding: 2vh 4vw;
+animation: top 3s;
+}
+@keyframes top {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    
+}
+main nav .container-1 img{
+    width:80px;
+    height: 80px;
+    object-fit: cover;
+}
+main nav .container-2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: rgb(0, 68, 17);
+
+
+}
+main nav .container-2 ul li{
+    margin: 0 1.4rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+/* =====================content and container section============================ */
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 1.4rem 4vw;
+}
+main section img{
+    height: 400px;
+    width:300px;
+}
+main section .container{
+    width: 50%;
+    height: 100%;
+
+}
+main section .container-1{
+    display: flex;
+    flex-direction: column;
+    animation: left 3s;
+
+
+}
+@keyframes left {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    
+}
+main section .container-1 h1{
+    font-size: 4vw;
+    font-family: sans-serif;
+
+}
+main section .container-1 .green{
+    color: #006239;
+}
+main section .container-1 div{
+    padding: 20px 0px;
+}
+main section .container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: right 3s;
+}
+@keyframes right {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    
+}
+main section .container-1 button {
+  width: 100px;
+  background-color: #006341;
+  color: rgb(255, 255, 255);
+   padding: 13px 10px ;
+  border-radius: 30px;
+  border: 0px;
+  margin: 10px 0;
+  font-weight: bolder;
+  font-size: 15px;
+}
+main section .container-1 p{
+    padding: 20px 0px;
+    font-family: sans-serif; 
+    color: gray;
+    font-weight: bolder;
+    padding-right: 100px;
+   
+
+}
+main section .container-1 button:hover{
+    background-color: #4f5e12;
+}
+@media (max-width:600px){
+    nav{
+        padding: 10px;
+    }
+    main nav .container-2 ul li{
+        
+        margin: 0 1.5vw;
+        
+    }
+main section{
+    flex-direction: column;
+    padding: 20px;
+}
+main section .container img{
+    width: 200px;
+    height: 200px;
+}
+main section .container{
+    width: 100%;
+}
+main section .container-1  div{
+    padding: 10px 0px;
+    width: 70%;
+}
+main section .container-1 h1{
+    font-size:20px;
+
+}
+main section .container-1 p{
+  font-size: small;
+    padding: 05px 0;
+}
+main section .container-1 button{
+    margin: 0px;
+}
+
+}
